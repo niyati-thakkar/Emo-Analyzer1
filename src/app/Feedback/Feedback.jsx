@@ -14,16 +14,17 @@ const images = [
   ];
 
   export default function Feedback() {
-    const [imageUrl, setImageUrl] = useState(null);
+    const [customerSatisfaction, setCustomerSatisfaction] = useState(null);
+
     useEffect(() => {
-      const randomIndex = Math.floor(Math.random() * 101);
-      setImageUrl(images[(randomIndex/20 + 1)]);
+        const randomIndex = Math.floor(Math.random() * 101);
+        setCustomerSatisfaction(randomIndex);
     }, []);
   
     return (
-      <div>
-        <img src={imageUrl} alt="Random Image" />
-        <h1>Customer Satisfaction is {randomIndex}%</h1>
+      <div className="feedbackMessage">
+        <img src={images[Math.floor(customerSatisfaction / 20) + 1]} alt="Random Image" />
+        <h1>Customer Satisfaction is {customerSatisfaction}%</h1>
       </div>
     );
   }

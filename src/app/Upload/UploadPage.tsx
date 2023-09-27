@@ -15,7 +15,7 @@ export default function Upload() {
     // $('dontblur').remove('.blur');
     $('dontblur').remove('.hide');
   }
-  $(document).on('click', function(event) {
+  $('.container').on('click', function(event) {
       // Remove the blur class from all elements
       $('.container').children().removeClass('blur');
   
