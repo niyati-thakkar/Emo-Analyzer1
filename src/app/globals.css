@@ -17,23 +17,28 @@ body{
     --background-end-rgb: 0, 0, 0;
   }
 }
-.container{
+.containerOuter{
   padding: 10vh 0;
   text-align: center;
 }
 .outerBox{
   text-align: center;
   width:100%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* Center and scale the image nicely */
-  
+}
+.inputParent{
+  width: 25vh;
+  height: 13vh;
 }
 .uploadContainer{
   width: 20%;
   position: absolute;
-  top:60%;
+  height: 10%;
+  top:65%;
   text-align: center;
 }
 .firstPageForm{
@@ -60,6 +65,7 @@ body{
 }
 .blur {
   filter: blur(3px);
+  opacity: 0.5;
 }
 
 .hide {
